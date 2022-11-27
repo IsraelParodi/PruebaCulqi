@@ -1,4 +1,4 @@
-export interface IToken {
+export type IToken = {
   email: string;
   cvv: number;
   card_number: string;
@@ -6,4 +6,4 @@ export interface IToken {
   expiration_year: string;
   token?: string;
   create_date?: Date;
-}
+};
