@@ -18,9 +18,7 @@ const getToken: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (
   )
     return formatJSONResponseBadRequest({ message: "El PK no es válido" });
   validBearerToken(event.headers.Authorization);
-  let tokenData: IToken = await TokenService.findOne(
-    event.queryStringParameters.token
-  );
+  let tokenData: IToken = await TokenService.findOne(event.body.token);
 
   if (tokenData) {
     return formatJSONResponse({ message: "Token obtenido", input: tokenData });
