@@ -30,6 +30,7 @@ BODY:
     
 https://y6f7l5b5wl.execute-api.us-east-1.amazonaws.com/dev/get-token
 BODY: 
+
     {
         "token": "RESULTADO_DE_LA_CREACION",
     }
