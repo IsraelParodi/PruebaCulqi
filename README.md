@@ -16,6 +16,24 @@ Para correr el servicio
 - serverless offline (para correrlo en local)
 - npm test (para correr las pruebas unitarias)
 
+Rutas AWS
+https://y6f7l5b5wl.execute-api.us-east-1.amazonaws.com/dev/create-token
+BODY: 
+
+    {
+        "email": "Israelparodi@gmail.com",
+        "card_number": "4111111111111111",
+        "cvv": 123,
+        "expiration_month": "11",
+        "expiration_year": "2025"
+    }
+    
+https://y6f7l5b5wl.execute-api.us-east-1.amazonaws.com/dev/get-token
+BODY: 
+    {
+        "token": "RESULTADO_DE_LA_CREACION"
+    }
+
 La base de datos está alojada en MongoDB Atlas por lo no que requiere la creación de la misma para probarlo desde cualquier dispositivo
     
 
